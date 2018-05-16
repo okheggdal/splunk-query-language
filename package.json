@@ -1,0 +1,26 @@
+{
+    "name": "splunk-query-language",
+    "displayName": "Splunk Query Language",
+    "description": "Splunk query language highlighting",
+    "version": "0.0.1",
+    "publisher": "okheggdal",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "splunk",
+            "aliases": ["Splunk", "splunk"],
+            "extensions": [".splunk",".spl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "splunk",
+            "scopeName": "source.splunk",
+            "path": "./syntaxes/splunk.tmLanguage.json"
+        }]
+    }
+}
